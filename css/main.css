@@ -719,11 +719,15 @@ button{
     padding-right: 50px !important;
     background: url("../images/minus-icon.jpg") no-repeat 5px center;
 }
-.tab-head button{
+.tab-head button {
     text-transform: uppercase;
     font-family: 'Montserrat-Regular';
     font-size: 15px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 .tab-des{
     font-family: 'Lato-Regular';

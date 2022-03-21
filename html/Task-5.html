@@ -268,17 +268,13 @@
                     </div>
                     <div>
                         <div class="tab-section"  >
-                            <div class="tab-head" id="icon">
-                                <button class="tab_btn" onclick="openCity(event, 'experience')" onclick="changeImg()">
+                            <div class="tab-head"  >
+                                <button class="tab_btn" onclick="openCity(event, 'experience')" id="icon" >
                                     we have a wide bredth of experience over 30 years
-
+                                    <img src="../images/plus-icon.jpg" alt="" >
                                    
                                 </button>
-                                <div>
-                                    <img src="../images/plus-icon.jpg" id="plus_icon" alt="">
-                               
-                                    <!-- <img src="../images/minus-icon.jpg" id="minus_icon" alt=""> -->
-                                </div>
+                                
                             </div>
                             <div class="tab-des active" id="experience" style="display: block;">
                                 <p>
@@ -290,15 +286,12 @@
                             </div>
                         </div>
                         <div class="tab-section"   >
-                            <div class="tab-head" id="icon">
-                                <button class="tab_btn" onclick="openCity(event, 'influence')" onclick="changeImg()">
+                            <div class="tab-head"  >
+                                <button class="tab_btn" id="icon" onclick="openCity(event, 'influence')" >
                                     we are independent and free from third party influence
+                                    <img src="../images/plus-icon.jpg" alt="" >
                                 </button>
-                                <div >
-                                    <img src="../images/plus-icon.jpg" id="plus_icon" alt="">
-                               
-                                    <!-- <img src="../images/minus-icon.jpg" id="minus_icon" alt=""> -->
-                                </div>
+                                
                             </div>
                             <div class="tab-des" id="influence" style="display: none;">
                                 <p>
@@ -310,15 +303,12 @@
                             </div>
                         </div>
                         <div class="tab-section" >
-                            <div class="tab-head" id="icon">
-                                <button class="tab_btn" onclick="openCity(event, 'service')" onclick="changeImg()">
+                            <div class="tab-head" >
+                                <button class="tab_btn" onclick="openCity(event, 'service')"   id="icon">
                                     we has a pro-active mindset in regards to client service
+                                    <img src="../images/plus-icon.jpg" alt="" >
                                 </button>
-                                <div>
-                                    <img src="../images/plus-icon.jpg" id="plus_icon" alt="">
                                
-                                    <!-- <img src="../images/minus-icon.jpg" id="minus_icon" alt=""> -->
-                                </div>
                             </div>
                             <div class="tab-des" id="service" style="display: none;">
                                 <p>
@@ -1070,7 +1060,7 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-     <script>
+     <script type="text/javascript">
         function openCity(evt, cityName) {
             var i, tab_description, tab_btn;
             tab_description = document.getElementsByClassName("tab-des");
@@ -1083,7 +1073,13 @@
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
-            
+
+            if(document.getElementById("icon").src.match("images/plus-icon.jpg") ){
+                document.getElementById("icon").src = "images/minus-icon.jpg";
+            }
+            else{
+                document.getElementById("icon").src = " images/plus-icon.jpg";
+            }
         }
     </script>
   
