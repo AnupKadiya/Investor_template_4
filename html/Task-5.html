@@ -269,9 +269,9 @@
                     <div>
                         <div class="tab-section"  >
                             <div class="tab-head"  >
-                                <button class="tab_btn" onclick="openCity(event, 'experience')" id="icon" >
+                                <button class="tab_btn active" onclick="openCity(event, 'experience')" id="icon" >
                                     we have a wide bredth of experience over 30 years
-                                    <img src="../images/plus-icon.jpg" alt="" >
+                                    <!-- <img src="../images/plus-icon.jpg" alt="" > -->
                                    
                                 </button>
                                 
@@ -289,7 +289,7 @@
                             <div class="tab-head"  >
                                 <button class="tab_btn" id="icon" onclick="openCity(event, 'influence')" >
                                     we are independent and free from third party influence
-                                    <img src="../images/plus-icon.jpg" alt="" >
+                                    <!-- <img src="../images/plus-icon.jpg" alt="" > -->
                                 </button>
                                 
                             </div>
@@ -306,7 +306,7 @@
                             <div class="tab-head" >
                                 <button class="tab_btn" onclick="openCity(event, 'service')"   id="icon">
                                     we has a pro-active mindset in regards to client service
-                                    <img src="../images/plus-icon.jpg" alt="" >
+                                    <!-- <img src="../images/plus-icon.jpg" alt="" > -->
                                 </button>
                                
                             </div>
@@ -1074,12 +1074,7 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
 
-            if(document.getElementById("icon").src.match("images/plus-icon.jpg") ){
-                document.getElementById("icon").src = "images/minus-icon.jpg";
-            }
-            else{
-                document.getElementById("icon").src = " images/plus-icon.jpg";
-            }
+           
         }
     </script>
   

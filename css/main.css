@@ -711,6 +711,16 @@ button{
     justify-content: space-between;
 
 }
+.tab_btn{
+    background: url("../images/plus-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.tab_btn.active {
+    background: url("../images/minus-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
 .tab-head.iconize {
     padding-right: 50px !important;
     background: url("../images/plus-icon.jpg") no-repeat 5px center;
@@ -801,6 +811,7 @@ button{
     width: 100px;
    background-color: rgba(0,171,201,255);
     bottom: -15px;
+    left: 44%;
 }
 .p-second_section{
     margin-left: auto;
