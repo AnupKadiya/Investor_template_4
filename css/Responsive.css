@@ -78,6 +78,9 @@
     .navigation_menu{
         display: none;
     }
+    .list{
+        display: none;
+    }
     .openbtn{
         display: block;
     }

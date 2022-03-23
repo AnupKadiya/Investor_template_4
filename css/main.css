@@ -374,8 +374,8 @@ button{
 
 .white_menu{
     background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -431,7 +431,47 @@ button{
 .navigation_menu a:hover{
     color: rgb(0, 171, 205);
 }
+.header_list{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    column-gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+}
 
+.header_list li{
+    padding: 30px 16px ;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 3px solid transparent;
+}
+.header_list li.active{
+    border-bottom: 3px solid;
+    border-color: rgba(2,173,201,255);
+}
+.header_list li:hover{
+    border-bottom: 3px solid;
+    border-color: rgba(2,173,201,255);
+    
+}
+.anchor{
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Regular';
+    color: rgba(36,43,51,255);
+    font-size: 13px;
+}
+.anchor:hover{
+    color: rgba(0,171,201,255);
+}
 /* mobile menu css */
 .openbtn{
     background-color: rgb(255, 255, 255);
@@ -811,7 +851,7 @@ button{
     width: 100px;
    background-color: rgba(0,171,201,255);
     bottom: -15px;
-    left: 44%;
+    left: 36%;
 }
 .p-second_section{
     margin-left: auto;
