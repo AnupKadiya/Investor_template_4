@@ -778,6 +778,7 @@ button{
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    padding-right: 25px;
 }
 .tab-des{
     font-family: 'Lato-Regular';
@@ -851,7 +852,7 @@ button{
     width: 100px;
    background-color: rgba(0,171,201,255);
     bottom: -15px;
-    left: 36%;
+    left: 44%;
 }
 .p-second_section{
     margin-left: auto;
