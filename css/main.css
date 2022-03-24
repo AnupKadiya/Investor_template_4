@@ -626,12 +626,14 @@ button{
     margin-right: auto;
     width: 100%;
 }
-.h2-head{
+
+.sec-2{
+    position: relative;
     text-transform: uppercase;
     font-family: 'Montserrat-SemiBold';
-    position: relative;
+
 }
-.h2-head::after{
+.sec-2::after{
     content: '';
     position: absolute;
     height: 3px;
@@ -852,7 +854,7 @@ button{
     width: 100px;
    background-color: rgba(0,171,201,255);
     bottom: -15px;
-    left: 44%;
+    left: 33%;
 }
 .p-second_section{
     margin-left: auto;
